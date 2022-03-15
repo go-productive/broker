@@ -24,11 +24,6 @@ type (
 		consumerID  string
 		waitGroup   sync.WaitGroup
 	}
-	XInfoConsumer struct {
-		Name    string
-		Pending int64
-		Idle    time.Duration
-	}
 	_StreamMQOptions struct {
 		maxLen           int64
 		msgIdleTime      time.Duration

@@ -24,6 +24,7 @@ type (
 	}
 	Consumer struct {
 		MarshalFunc func(interface{}) ([]byte, error)
+		// if not nil, consume background in other goroutine
 		ConsumeFunc func(bs []byte) error
 	}
 )
